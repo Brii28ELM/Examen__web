@@ -7,7 +7,6 @@
 - **Canchas:** Vóley 2 · Básquet 2  
 - **Fecha:** 2026-11-13  
 - **Horarios:** 08:00 a 10:00 y 10:00 a 12:00 (UTC)  
-- **Puerto local:** 3073  
 
 ---
 
@@ -18,11 +17,12 @@ Crea tu archivo `.env` basado en `.env-example`:
 ```bash
 cp .env-example .env
 ```
-Asegúrate de configurar los valores:
+Configura las variables correspondientes a tu entorno:
 ```env
-PORT=3073
+# XX = dos últimos dígitos de tu ID ESPE
+PORT=30XX
 NODE_ENV=development
-JWT_SECRET=secreto_examen_p1_espe_2026
+JWT_SECRET=cambia_este_secreto
 DATABASE_URL="postgresql://espe_user:espe_password@localhost:5432/espe_db?schema=public"
 ```
 
@@ -59,7 +59,7 @@ Modo producción:
 ```bash
 npm start
 ```
-Servidor disponible en: `http://localhost:3073`
+Servidor disponible en: `http://localhost:30XX`
 
 ---
 
